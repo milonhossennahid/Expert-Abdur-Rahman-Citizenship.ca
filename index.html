@@ -1,639 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MD Abdur Rahman - Professional Immigration Profile</title>
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canada Australia immigration and Citizenship (Abdur Rahaman) visa Expert</title>
   <style>
-    :root {
-      --fb-blue: #1877F2;
-      --fb-bg: #f0f2f5;
-      --fb-gray: #65676b;
-      --fb-light-gray: #e4e6eb;
-      --fb-card-bg: #ffffff;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
-      font-family: 'Roboto', sans-serif;
-      background-color: var(--fb-bg);
-      color: #050505;
-      line-height: 1.5;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      color: #1c1e21;
     }
-
-    .profile-container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: var(--fb-card-bg);
-      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-    }
-
-    /* ফেসবুক ব্যানার/কভার ফটো */
-    .cover-photo-container {
-      position: relative;
+    .cover {
       width: 100%;
-      height: 320px;
-      overflow: hidden;
-    }
-
-    .cover-photo {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* প্রোফাইল হেডার অংশ */
-    .profile-header-content {
-      padding: 0 32px 16px;
+      height: 220px;
+      background: url("https://uploads.onecompiler.io/44asn934w/44asn9xkw/1000200996.gif") center/cover no-repeat;
       position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: -100px;
     }
-
-    .profile-pic-wrapper {
-      position: relative;
-      width: 168px;
-      height: 168px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      background: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      overflow: hidden;
-    }
-
     .profile-pic {
-      width: 100%;
-      height: 100%;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      position: absolute;
+      bottom: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
       object-fit: cover;
     }
-
-    .name-section {
+    .container {
+      max-width: 650px;
+      margin: auto;
+      padding: 85px 20px 30px;
       text-align: center;
-      margin-top: 12px;
+      background: #fff;
+      border-radius: 0 0 12px 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
-
-    .profile-name {
-      font-size: 32px;
-      font-weight: 700;
+    .name {
+      font-size: 24px;
+      font-weight: bold;
       display: flex;
+      justify-content: center;
       align-items: center;
-      justify-content: center;
       gap: 8px;
+      color: #1c1e21;
     }
-
-    .verified-badge {
-      color: var(--fb-blue);
-      font-size: 20px;
+    .verify-badge {
+      width: 22px;
+      height: 22px;
     }
-
-    .follower-stats {
-      color: var(--fb-gray);
-      font-weight: 500;
-      margin-top: 4px;
-      font-size: 16px;
-    }
-
-    /* অ্যাকশন বাটনসমূহ */
-    .fb-action-buttons {
-      display: flex;
-      gap: 8px;
-      margin-top: 16px;
-      width: 100%;
-      justify-content: center;
-    }
-
-    .fb-btn {
-      padding: 0 15px;
-      height: 36px;
-      border-radius: 6px;
-      border: none;
+    .followers {
       font-size: 15px;
+      color: #65676b;
+      margin: 8px 0 15px;
+    }
+    .bio {
+      font-size: 16px;
+      color: #4b4d50;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    /* Professional Buttons */
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .btn {
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
       font-weight: 600;
+      color: #fff;
+      transition: all 0.3s ease;
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 8px;
+      font-size: 14px;
+      border: none;
       cursor: pointer;
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
+    .btn.facebook { background: linear-gradient(45deg, #1877f2, #0056b3); }
+    .btn.imo { background: linear-gradient(45deg, #00a2ed, #007bb5); }
+    .btn.whatsapp { background: linear-gradient(45deg, #25d366, #128c7e); }
+    .btn.call { background: linear-gradient(45deg, #e91e63, #c2185b); }
+    .btn.about { background: linear-gradient(45deg, #ff9800, #f57c00); }
+
+    /* Info Sections */
+    .info-card {
+      max-width: 650px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+    .info-content { padding: 20px; }
+    .info-card h3 {
+      color: #1877f2;
+      margin-top: 0;
+      font-size: 18px;
+      border-left: 4px solid #1877f2;
+      padding-left: 10px;
+    }
+    .info-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: pointer;
+    }
+    .info-card p, .info-card li {
+      color: #4b4d50;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .click-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #1877f2;
       text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      background: #e7f3ff;
+      border-radius: 6px;
+    }
+
+    /* Floating Chat */
+    .chat-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #1877f2;
+      color: #fff;
+      padding: 15px 25px;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(24, 119, 242, 0.4);
+      font-weight: bold;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .chat-popup {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      width: 300px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      z-index: 1000;
+      overflow: hidden;
+      border: 1px solid #eee;
+    }
+    .chat-header {
+      background: #1877f2;
+      color: white;
+      padding: 15px;
+      font-weight: bold;
+    }
+    .chat-body { padding: 15px; max-height: 400px; overflow-y: auto; }
+    .chat-option {
+      background: #f0f2f5;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      font-size: 14px;
       transition: 0.2s;
     }
-
-    .btn-follow { background: var(--fb-blue); color: #fff; width: 160px; }
-    .btn-msg { background: var(--fb-light-gray); color: #050505; width: 160px; }
-    .fb-btn:hover { filter: brightness(0.9); }
-
-    /* ট্যাব মেনু */
-    .profile-tabs {
-      border-top: 1px solid #ddd;
-      margin-top: 16px;
-      display: flex;
-      padding: 0 16px;
-      overflow-x: auto;
-    }
-
-    .tab-item {
-      padding: 16px;
-      color: var(--fb-gray);
-      font-weight: 600;
-      cursor: pointer;
-      white-space: nowrap;
-      border-bottom: 3px solid transparent;
-    }
-
-    .tab-item.active {
-      color: var(--fb-blue);
-      border-bottom-color: var(--fb-blue);
-    }
-
-    /* বডি লেআউট */
-    .profile-body {
-      padding: 16px;
-      display: grid;
-      grid-template-columns: 360px 1fr;
-      gap: 16px;
-    }
-
-    .intro-card {
-      background: #fff;
-      padding: 16px;
-      border-radius: 8px;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-      margin-bottom: 16px;
-    }
-
-    .intro-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      margin-bottom: 15px;
-      font-size: 15px;
-    }
-    .intro-item i { color: var(--fb-gray); font-size: 18px; margin-top: 3px; width: 20px; text-align: center; }
-
-    /* পোস্ট ডিজাইন */
-    .post-card {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-      margin-bottom: 16px;
-      padding-top: 12px;
-      overflow: hidden;
-    }
-
-    .post-header {
-      padding: 0 16px 12px;
-      display: flex;
-      gap: 10px;
-    }
-
-    .post-content {
-      padding: 0 16px 12px;
-      font-size: 15px;
-    }
-
-    .post-img {
-      width: 100%;
-      display: block;
-    }
-
-    /* পোস্ট অ্যাকশন বাটন */
-    .post-actions-container {
-      border-top: 1px solid #eee;
-      border-bottom: 1px solid #eee;
-      margin: 8px 16px;
-      display: flex;
-      justify-content: space-around;
-      padding: 4px 0;
-    }
-
-    .action-item {
-      padding: 8px;
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      color: var(--fb-gray);
-      font-weight: 600;
-      cursor: pointer;
-      border-radius: 4px;
+    .chat-option:hover { background: #e4e6eb; color: #1877f2; }
+    .chat-reply {
+      margin-top: 15px;
       font-size: 13px;
+      color: #1c1e21;
+      background: #e7f3ff;
+      padding: 12px;
+      border-radius: 8px;
+      display: none;
+      border-left: 4px solid #1877f2;
     }
-    .action-item:hover { background: #f2f2f2; }
-
-    /* কাস্টম লিংক বাটন (ইমেজের নিচে) */
-    .post-cta-bar {
-      padding: 12px 16px;
-      display: flex;
-      gap: 10px;
-    }
-
-    .cta-btn {
-      flex: 1;
-      padding: 10px;
-      border-radius: 6px;
-      text-decoration: none;
-      text-align: center;
-      font-weight: 600;
-      font-size: 14px;
-      transition: 0.3s;
-    }
-
-    .cta-primary { background: var(--fb-blue); color: #fff; }
-    .cta-secondary { background: #e4e6eb; color: #050505; }
-    .cta-btn:hover { opacity: 0.9; transform: translateY(-1px); }
-
-    /* ফটোর গ্রিড */
-    .photos-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 5px;
-      margin-top: 12px;
-    }
-    .photo-item img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 4px; }
 
     footer {
-      text-align: center;
-      padding: 30px;
       background: #fff;
-      margin-top: 20px;
+      margin-top: 30px;
+      padding: 15px;
       border-top: 1px solid #ddd;
     }
+    marquee { color: #1877f2; font-weight: bold; font-size: 14px; }
 
-    @media (max-width: 768px) {
-      .profile-body { grid-template-columns: 1fr; }
-      .cover-photo-container { height: 200px; }
-      .profile-header-content { margin-top: -60px; padding: 0 16px; }
-      .profile-pic-wrapper { width: 120px; height: 120px; }
-      .profile-name { font-size: 24px; }
-    }
+    /* Utility */
+    .img-main { width: 100%; border-radius: 10px; margin: 15px 0; }
   </style>
 </head>
 <body>
 
-  <div class="profile-container">
-    <!-- কভার ফটো -->
-    <div class="cover-photo-container">
-      <img src="https://uploads.onecompiler.io/44asn934w/44asn9xkw/1000200996.gif" alt="Cover Photo" class="cover-photo">
-    </div>
-
-    <!-- হেডার -->
-    <div class="profile-header-content">
-      <div class="profile-pic-wrapper">
-        <img src="https://uploads.onecompiler.io/44asn934w/44asn9xkw/1000200984.jpg" alt="Profile" class="profile-pic">
-      </div>
-      
-      <div class="name-section">
-        <h1 class="profile-name">Abdur Rahman Citizenship<i class="fas fa-check-circle verified-badge"></i>
-        </h1>
-        <div class="follower-stats">
-          <span id="follower-count">0</span> Followers • 2 Following
-        </div>
-      </div>
-
-      <div class="fb-action-buttons">
-        <button class="fb-btn btn-follow"><i class="fas fa-plus"></i> Follow</button>
-        <a href="https://wa.me/16722844386" class="fb-btn btn-msg"><i class="fab fa-whatsapp"></i> Contact Info</a>
-      </div>
-    </div>
-
-    <img src="https://uploads.onecompiler.io/445hxyxas/449czs99z/1000198437.gif" style="width: 100%; height: 5px; object-fit: cover;">
-
-    <!-- ট্যাব মেনু -->
-    <div class="profile-tabs">
-      <div class="tab-item active">Posts</div>
-      <div class="tab-item">About</div>
-      <div class="tab-item">Apply VAC</div>
-      <div class="tab-item">Success Stories</div>
-      <div class="tab-item">Official Web</div>
-    </div>
-
-    <div class="profile-body">
-      <!-- বাম কলাম (ইন্ট্রো) -->
-      <div class="left-col">
-        <div class="intro-card">
-          <h3 style="margin-bottom: 15px;">Intro</h3>
-          <p style="text-align: center; font-style: italic; color: #555; margin-bottom: 15px;">"Expert Visa Processing & Immigration Solutions 🍁" ...জীবনে যতই খারাপ সময় আসুক না কেনো!🙂🥀
-
-- 𝐉𝐮𝐬𝐭 𝐬𝐦𝐢𝐥𝐞 𝐚𝐧𝐝 𝐬𝐚𝐲 𝐀𝐥𝐡𝐚𝐦𝐝𝐮𝐥𝐢𝐥𝐥𝐚𝐡..!😊</p>
-          <div class="intro-item">
-            <i class="fas fa-briefcase"></i> <span>Senior Consultant at <b>Abdur Rahman Citizenship Canada</b></span>
-          </div>
-          <div class="intro-item">
-            <i class="fas fa-graduation-cap"></i> <span>Specialized in <b>Immigration Reform Lawyer in Canada</b></span>
-          </div>
-          <div class="intro-item">
-            <i class="fas fa-home"></i> <span>Livi-ng<b>Canada, La Canada Flintridge, CA, United States, California</b></span>
-          </div>
-          <div class="intro-item">
-            <i class="fas fa-rss"></i> <span>Public by <b>2,189,085 people View</b></span>
-          </div>
-        </div>
-
-        <div class="intro-card">
-          <h3 style="margin-bottom: 12px;">Featured Photos</h3>
-          <div class="photos-grid">
-            <div class="photo-item"><img src="https://uploads.onecompiler.io/449d687rt/449d693vy/1000198442.gif"></div>
-            <div class="photo-item"><img src="https://uploads.onecompiler.io/445hxyxas/448rb5dzc/1000198339.jpg"></div>
-            <div class="photo-item"><img src="https://uploads.onecompiler.io/445hxyxas/448rb5dzc/1000198338.jpg"></div>
-            <div class="photo-item"><img src="https://uploads.onecompiler.io/449d687rt/449d693vy/1000198447.jpg"></div>
-            <div class="photo-item"><img src="https://uploads.onecompiler.io/449d687rt/449enrfcs/1000198568.jpg"></div>
-            <div class="photo-item"><img src="https://uploads.onecompiler.io/449d687rt/449enrfcs/1000198569.jpg"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ডান কলাম (ফিড) -->
-      <div class="main-feed">
-        
-        <!-- পোস্ট ১ -->
-        <div class="post-card">
-          <div class="post-header">
-            <img src="https://uploads.onecompiler.io/445hxyxas/448rb5dzc/1000198333.jpg" style="width: 40px; height: 40px; border-radius: 50%;">
-            <div>
-              <div style="font-weight: 700;">Abdur Rahman <i class="fas fa-check-circle verified-badge" style="font-size: 12px;"></i></div>
-              <div style="font-size: 13px; color: var(--fb-gray);">December 25, 2025 • <i class="fas fa-globe-americas"></i></div>
-            </div>
-          </div>
-          <div class="post-content">
-            <h3>স্কিল অ্যাসেসমেন্ট সাপোর্ট</h3>
-            <p>আমরা আপনার পেশাদার দক্ষতা ও যোগ্যতার সঠিক মূল্যায়ন নিশ্চিত করি (VETASSESS, Engineers Australia ইত্যাদি)। কানাডা এবং অস্ট্রেলিয়ার স্বপ্ন পূরণে আমরা দিচ্ছি সঠিক গাইডলাইন।</p>
-          </div>
-          <img src="https://uploads.onecompiler.io/449d687rt/449gj4z7u/1000198693.jpg" class="post-img">
-          <div class="post-actions-container">
-            <div class="action-item"><i class="far fa-thumbs-up"></i> 598 Likes</div>
-            <div class="action-item"><i class="far fa-comment"></i> 252 Comments</div>
-            <div class="action-item"><i class="far fa-share-square"></i> 163 Shares</div>
-          </div>
-          <div class="post-cta-bar">
-            <a href="https://immigrationwork-visa-requirements-gov.netlify.app/" class="cta-btn cta-primary">Apply Now</a>
-            <a href="https://wa.me/16722844386" class="cta-btn cta-secondary">Contact-us</a>
-          </div>
-        </div>
-
-        <!-- পোস্ট ২ -->
-        <div class="post-card">
-          <div class="post-header">
-            <img src="https://uploads.onecompiler.io/445hxyxas/448rb5dzc/1000198333.jpg" style="width: 40px; height: 40px; border-radius: 50%;">
-            <div>
-              <div style="font-weight: 700;">Abdur Rahman <i class="fas fa-check-circle verified-badge" style="font-size: 12px;"></i></div>
-              <div style="font-size: 13px; color: var(--fb-gray);">December 19, 2025 • <i class="fas fa-globe-americas"></i></div>
-            </div>
-          </div>
-          <div class="post-content">
-            <p>US Canada for Your Visa: Expertise, Support, Success! Don’t let your dreams await—contact us to start your journey too!</p>
-          </div>
-          <img src="https://uploads.onecompiler.io/449d687rt/449gh3ugc/1000198677.jpg" class="post-img">
-          <div class="post-actions-container">          
-            <div class="action-item"><i class="far fa-thumbs-up"></i> 1,098 Likes</div>
-            <div class="action-item"><i class="far fa-comment"></i> 392 Comments</div>
-            <div class="action-item"><i class="far fa-share-square"></i> 289 Shares</div>
-          </div>
-          <div class="post-cta-bar">
-            <a href="https://immigrationwork-visa-requirements-gov.netlify.app/" class="cta-btn cta-primary">Apply Now</a>
-            <a href="https://wa.me/16722844386" class="cta-btn cta-secondary">Contact-us</a>
-          </div>
-        </div>
-        
-        <!-- পোস্ট 2 -->
-        <div class="post-card">
-          <div class="post-header">
-            <img src="https://uploads.onecompiler.io/445hxyxas/448rb5dzc/1000198333.jpg" style="width: 40px; height: 40px; border-radius: 50%;">
-            <div>
-              <div style="font-weight: 700;">Abdur Rahman <i class="fas fa-check-circle verified-badge" style="font-size: 12px;"></i></div>
-              <div style="font-size: 13px; color: var(--fb-gray);">December 16, 2025 • <i class="fas fa-globe-americas"></i></div>
-            </div>
-          </div>
-          <div class="post-content">
-            <p>From Nepal to Canada - Sagar's Work Permit Approved ! 🎉 🇨🇦 A huge congratulations to Sagar, who is now officially on his way to Canada with an approved work permit!
-              With his Labour Market Impact Assessment (LMIA) approved and all documents in place, Sagar is ready to begin a new chapter and we're proud to have helped make it happen.!</p>
-          </div>
-          <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F898599945932208%2F&show_text=true&width=267&t=0" width="100%" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-          <div class="post-actions-container">          
-            <div class="action-item"><i class="far fa-thumbs-up"></i> 1,028 Likes</div>
-            <div class="action-item"><i class="far fa-comment"></i> 352 Comments</div>
-            <div class="action-item"><i class="far fa-share-square"></i> 289 Shares</div>
-          </div>
-          <div class="post-cta-bar">
-            <a href="https://immigrationwork-visa-requirements-gov.netlify.app/" class="cta-btn cta-primary">Apply Now</a>
-            <a href="https://wa.me/16722844386" class="cta-btn cta-secondary">Contact-us</a>
-          </div>
-        </div>
-
-        <!-- পোস্ট ৩ -->
-        <div class="post-card">
-          <div class="post-header">
-            <img src="https://uploads.onecompiler.io/445hxyxas/448rb5dzc/1000198333.jpg" style="width: 40px; height: 40px; border-radius: 50%;">
-            <div>
-              <div style="font-weight: 700;">Abdur Rahman <i class="fas fa-check-circle verified-badge" style="font-size: 12px;"></i></div>
-              <div style="font-size: 13px; color: var(--fb-gray);">December 10, 2025 • <i class="fas fa-globe-americas"></i></div>
-            </div>
-          </div>
-          <div class="post-content">
-            <p>Canadians Can Receive Payments From These Government Benefits & Credits In 2026. Stay updated with the rise in cost of living.</p>
-          </div>
-          <img src="https://uploads.onecompiler.io/449d687rt/449kkc98e/1000198898.gif" class="post-img">
-          <div class="post-actions-container">          
-            <div class="action-item"><i class="far fa-thumbs-up"></i> 858 Likes</div>
-            <div class="action-item"><i class="far fa-comment"></i> 410 Comments</div>
-            <div class="action-item"><i class="far fa-share-square"></i> 196 Shares</div>
-          </div>
-          <div class="post-cta-bar">
-            <a href="https://immigrationwork-visa-requirements-gov.netlify.app/" class="cta-btn cta-primary">Apply Now</a>
-            <a href="https://wa.me/16722844386" class="cta-btn cta-secondary">Contact-us</a>
-          </div>
-        </div>
-        
-      
-        <!-- পোস্ট 1 -->
-        <div class="post-card">
-          <div class="post-header">
-            <img src="https://uploads.onecompiler.io/445hxyxas/448rb5dzc/1000198333.jpg" style="width: 40px; height: 40px; border-radius: 50%;">
-            <div>
-              <div style="font-weight: 700;">Abdur Rahman <i class="fas fa-check-circle verified-badge" style="font-size: 12px;"></i></div>
-              <div style="font-size: 13px; color: var(--fb-gray);">December 15, 2025 • <i class="fas fa-globe-americas"></i></div>
-            </div>
-          </div>
-          <div class="post-content">
-            <p> Regional Visas: 🎉 Focus on regional areas. Skilled Work Regional (Provisional) (491): 5-year provisional visa, pathway to permanent (Subclass 191).</p>
-          </div>
-           <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1541332753657095%2F&show_text=true&width=267&t=0" width="100%" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-          <div class="post-actions-container">          
-            <div class="action-item"><i class="far fa-thumbs-up"></i> 1,008 Likes</div>
-            <div class="action-item"><i class="far fa-comment"></i> 312 Comments</div>
-            <div class="action-item"><i class="far fa-share-square"></i> 219 Shares</div>
-          </div>
-          <div class="post-cta-bar">
-            <a href="https://immigrationwork-visa-requirements-gov.netlify.app/" class="cta-btn cta-primary">Apply Now</a>
-            <a href="https://wa.me/16722844386" class="cta-btn cta-secondary">Contact-us</a>
-          </div>
-        </div>
-        
-        <!-- পোস্ট ৩ -->
-        <div class="post-card">
-          <div class="post-header">
-            <img src="https://uploads.onecompiler.io/445hxyxas/448rb5dzc/1000198333.jpg" style="width: 40px; height: 40px; border-radius: 50%;">
-            <div>
-              <div style="font-weight: 700;">Abdur Rahman <i class="fas fa-check-circle verified-badge" style="font-size: 12px;"></i></div>
-              <div style="font-size: 13px; color: var(--fb-gray);">December 13, 2025 • <i class="fas fa-globe-americas"></i></div>
-            </div>
-          </div>
-          <div class="post-content">
-            <p>Canadians Can Receive Payments From These Government Benefits & Credits In 2026. Stay updated with the rise in cost of living.</p>
-          </div>
-          <img src="https://uploads.onecompiler.io/449d687rt/449eq6tnj/1000198588.jpg" class="post-img">
-          <div class="post-actions-container">          
-            <div class="action-item"><i class="far fa-thumbs-up"></i> 1,308 Likes</div>
-            <div class="action-item"><i class="far fa-comment"></i> 412 Comments</div>
-            <div class="action-item"><i class="far fa-share-square"></i> 299 Shares</div>
-          </div>
-          <div class="post-cta-bar">
-            <a href="https://immigrationwork-visa-requirements-gov.netlify.app/" class="cta-btn cta-primary">Apply Now</a>
-            <a href="https://wa.me/16722844386" class="cta-btn cta-secondary">Contact-us</a>
-          </div>
-        </div>
-        
-               <!-- পোস্ট ৪ -->
-        <div class="post-card">
-          <div class="post-header">
-            <img src="https://uploads.onecompiler.io/445hxyxas/448rb5dzc/1000198333.jpg" style="width: 40px; height: 40px; border-radius: 50%;">
-            <div>
-              <div style="font-weight: 700;">Abdur Rahman <i class="fas fa-check-circle verified-badge" style="font-size: 12px;"></i></div>
-              <div style="font-size: 13px; color: var(--fb-gray);">December 07, 2025 • <i class="fas fa-globe-americas"></i></div>
-            </div>
-          </div>
-          <div class="post-content">
-            <p>Canadians Can Receive Payments From These Government Benefits & Credits In 2026. Stay updated with the rise in cost of living.</p>
-          </div>
-          <img src="https://uploads.onecompiler.io/449d687rt/449eq6tnj/1000198587.jpg" class="post-img">
-          <div class="post-actions-container">          
-            <div class="action-item"><i class="far fa-thumbs-up"></i> 1,198 Likes</div>
-            <div class="action-item"><i class="far fa-comment"></i> 382 Comments</div>
-            <div class="action-item"><i class="far fa-share-square"></i> 259 Shares</div>
-          </div>
-          <div class="post-cta-bar">
-            <a href="https://immigrationwork-visa-requirements-gov.netlify.app/" class="cta-btn cta-primary">Apply Now</a>
-            <a href="https://wa.me/16722844386" class="cta-btn cta-secondary">Contact-us</a>
-          </div>
-        </div>
-        
-        <!-- পোস্ট ৫ -->
-        <div class="post-card">
-          <div class="post-header">
-            <img src="https://uploads.onecompiler.io/445hxyxas/448rb5dzc/1000198333.jpg" style="width: 40px; height: 40px; border-radius: 50%;">
-            <div>
-              <div style="font-weight: 700;">Abdur Rahman <i class="fas fa-check-circle verified-badge" style="font-size: 12px;"></i></div>
-              <div style="font-size: 13px; color: var(--fb-gray);">December 01, 2025 • <i class="fas fa-globe-americas"></i></div>
-            </div>
-          </div>
-          <div class="post-content">
-            <p>Canadians Can Receive Payments From These Government Benefits & Credits In 2026. Stay updated with the rise in cost of living.</p>
-          </div>
-            <img src="https://uploads.onecompiler.io/449d687rt/449d693vy/1000198453.jpg" class="post-img">
-          <div class="post-actions-container">                      
-          <div class="action-item"><i class="far fa-thumbs-up"></i>1201.Like</div>
-          <div class="action-item"><i class="far fa-comment"></i> 412.Comment</div>
-          <div class="action-item"><i class="far fa-share-square"></i>319.Share</div>
-
-          </div>
-          <div class="post-cta-bar">
-            <a href="https://immigrationwork-visa-requirements-gov.netlify.app/" class="cta-btn cta-primary">Apply Now</a>
-            <a href="https://wa.me/16722844386" class="cta-btn cta-secondary">Contact-us</a>
-          </div>
-        </div>
-        
-                <!-- পোস্ট ৬ -->
-        <div class="post-card">
-          <div class="post-header">
-            <img src="https://uploads.onecompiler.io/445hxyxas/448rb5dzc/1000198333.jpg" style="width: 40px; height: 40px; border-radius: 50%;">
-            <div>
-              <div style="font-weight: 700;">Abdur Rahman <i class="fas fa-check-circle verified-badge" style="font-size: 12px;"></i></div>
-              <div style="font-size: 13px; color: var(--fb-gray);">October 29, 2025 • <i class="fas fa-globe-americas"></i></div>
-            </div>
-          </div>
-          <div class="post-content">
-            <p>Hiring Now - JOBs 2026 Apply submission  Age: 20-60 years Gender: All welcome Education: Graduate or non-graduate JOIN US Canada</p>
-          </div>          
-          <img src="https://uploads.onecompiler.io/449d687rt/449eq6tnj/1000198599.jpg" class="post-img">
-             <div class="post-actions-container">          
-             <div class="action-item"><i class="far fa-thumbs-up"></i>1288. Like</div>
-            <div class="action-item"><i class="far fa-comment"></i> 316. Comment</div>
-            <div class="action-item"><i class="far fa-share-square"></i>305. Share</div>
-          </div>
-          <div class="post-cta-bar">
-            <a href="https://immigrationwork-visa-requirements-gov.netlify.app/" class="cta-btn cta-primary">Apply Now</a>
-            <a href="https://wa.me/16722844386" class="cta-btn cta-secondary">Contact-us</a>
-          </div>
-        </div>
-        
-        <!-- পোস্ট ৭ -->
-        <div class="post-card">
-          <div class="post-header">
-            <img src="https://uploads.onecompiler.io/445hxyxas/448rb5dzc/1000198333.jpg" style="width: 40px; height: 40px; border-radius: 50%;">
-            <div>
-              <div style="font-weight: 700;">Abdur Rahman <i class="fas fa-check-circle verified-badge" style="font-size: 12px;"></i></div>
-              <div style="font-size: 13px; color: var(--fb-gray);">October 29, 2025 • <i class="fas fa-globe-americas"></i></div>
-            </div>
-          </div>
-          <div class="post-content">
-            <p>Canadians Can Receive Payments From These Government Benefits & Credits In 2026. Stay updated with the rise in cost of living.</p>
-          </div>          <img src="https://uploads.onecompiler.io/449d687rt/449d693vy/1000198450.jpg" class="post-img">
-             <div class="post-actions-container">          
-             <div class="action-item"><i class="far fa-thumbs-up"></i>1018. Like</div>
-            <div class="action-item"><i class="far fa-comment"></i> 296. Comment</div>
-            <div class="action-item"><i class="far fa-share-square"></i>295. Share</div>
-          </div>
-          <div class="post-cta-bar">
-            <a href="https://immigrationwork-visa-requirements-gov.netlify.app/" class="cta-btn cta-primary">Apply Now</a>
-            <a href="https://wa.me/16722844386" class="cta-btn cta-secondary">Contact-us</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <footer>
-      <img src="https://uploads.onecompiler.io/449d687rt/449d693vy/1000196782.jpg" style="max-width: 300px; margin-bottom: 10px; border-radius: 5px;">
-      <p>Facebook © 2026 · Abdur Rahman Immigration Official Page</p>
-    </footer>
+  <div class="cover">
+    <img src="https://uploads.onecompiler.io/44asn934w/44asn9xkw/1000200984.jpg" alt="Profile" class="profile-pic">
   </div>
 
+  <div class="container">
+    <div class="name">
+      Abdur Rahman Citizenship
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg" alt="Verified" class="verify-badge">
+    </div>
+    <div class="followers">🌍 5,409,280 followers | 5 following</div>
+    <p class="bio">🍁 Canada – Australia Reference Immigration Service <br> 🧍Expert visa service, (-Abdur Rahman-) Citizenship</p> 
+
+    <img src="https://uploads.onecompiler.io/44asn934w/44b8antw4/1000202012.jpg" class="img-main" alt="Promotion">
+    <p style="font-style: italic; color: #65676b;">👉: If you have any further questions about this Australia visa processing, please feel free to ask. 🌸</p>
+
+    <div class="buttons">
+      <a href="https://www.facebook.com/Mostofa.Milon.No/" target="_blank" class="btn facebook">📣 Facebook</a>
+      <a href="https://profile.imo.im/profileshare/shr.AAAAAAAAAAAAAAAAAAAAAIoBfsG16aP_1-gyNDdM789oFRN5uLnmCA4Exp6jBtNi" target="_blank" class="btn imo">🚀 IMO</a>
+      <a href="https://wa.link/y4u0i6" target="_blank" class="btn whatsapp">💬 WhatsApp</a>
+      <a href="https://immigrationwork-visa-requirements-gov.netlify.app/" target="_blank" class="btn call">📩 Visa Request</a>
+      <a href="https://whatsapp.com/channel/0029VbBluZUC1FuJ5Fx5mE22/114" target="_blank" class="btn about">ℹ️ Official Info</a>
+    </div>
+  </div>
+
+  <div class="info-card">
+    <div class="info-content">
+      <h3>Welcome to Government Info, Work and Residence</h3>
+      <p>A leading provider of next-generation job opportunities with globally recognized work qualifications and experience.</p>
+    </div>
+    <img src="https://uploads.onecompiler.io/44asn934w/44asn9xkw/1000200984.jpg" onclick="window.open('https://wa.me/+16722844386','_blank')" alt="Visa Help">
+    <div class="info-content">
+      <ul style="padding-left: 20px; margin: 10px 0;">
+        <li>Experience in the UK, Canada, Australia, and the US.</li>
+        <li>Helps provide staff, scholarships, and work visa support.</li>
+      </ul>
+      <a href="https://book-an-appointment-online.netlify.app/" class="click-link">📨 Click Now</a>
+    </div>
+  </div>
+
+  <div class="info-card">
+    <div class="info-content">
+      <h3>Expert Immigration Guidance 🍁</h3>
+      <p>Congrats Sherryle Joy & Joan For your Schengen visa! Wishing you all the best as you take on this new journey.</p>
+    </div>
+    <img src="https://uploads.onecompiler.io/44asn934w/44b8efb2y/1000202015.jpg" onclick="window.open('https://wa.me/+16722844386','_blank')" alt="Success Story">
+    <div class="info-content">
+      <p>• May you find plenty of success and joy along the way. Bon Voyage!</p>
+      <p>• Specialized support for smooth transitions to the US and Australia.</p>
+      <a href="https://wa.me/+16722844386" class="click-link">📨 Click Now</a>
+    </div>
+  </div>
+  
+  <div class="info-card">
+    <div class="info-content">
+      <h3>Australia visa process Guideline Details,</h3>
+      <p>The total cost of the Australian, (Skills Sub Class 482 in Demand) visa, including details. 🇦🇺</p>
+    </div>
+    <img src="https://uploads.onecompiler.io/43numy9ce/43yjpgrv2/1000179480.png" style="width: 100%; height: auto;" alt="Australia Visa"> 
+    <div class="info-content">
+      <p>• Congratulations Australia Immigration Short Skill Visa Sub Class 482 TTS Visa. 
+        🇨🇦 Canada Australia reference immigration,</p>
+      <p>• Expert visa service,
+       (-Abdur Rahman-) Citizenship, Canada.ca,</p>
+      <a href="https://wa.link/y4u0i6" class="click-link">📨 Click Now</a>
+    </div>
+   </div>
+  
+  <div class="info-card">
+    <div class="info-content">
+      <h1>AI support Chat</h1>
+    </div>
+    <img src="https://uploads.onecompiler.io/44bn72ma8/44bxev79n/1000204032.gif" style="width: 100%; height: auto;" alt="AI Chat"> 
+    <div class="info-content">     
+      <p>Ask  about your problems, will always try to help you, Canada Australia Visa Processing, You are being cheated in various places for this,</p>
+      <a href="https://wa.me/+16722844386" class="click-link">📨 Click Now</a>
+    </div>
+   </div>
+
+  <div class="chat-btn" onclick="toggleChat()">💬 Support team</div>
+  <div class="chat-popup" id="chatPopup">
+    <div class="chat-header">AI Support</div>
+    <div class="chat-body">
+      <div class="chat-option" onclick="reply('help')">🙄 আব্দুর রহমান কে এবং তার আসল পরিচয় কি,  জানতে চাই?</div>
+      <div class="chat-option" onclick="reply('web')">🇨🇦 Canada visa processing,? and Australia visa processing, কোনটা আমার জন্য বেস্ট হবে,</div>
+      <div class="chat-option" onclick="reply('fb')">📞 কন্টাক করার জন্য আমাকে টাচ করুন আমি আপনাকে তথ্য দিয়ে দিচ্ছি ! </div>
+      <div class="chat-option" onclick="reply('id')">🧕 আপনি আমাকে প্রশ্ন করুন, অবশ্যই আপনি আমার কাছে সঠিক তথ্য পাবেন?</div>
+      <div class="chat-option" onclick="reply('yt')">🇨🇦-🇳🇿  বর্তমান ভিসার ইস্যু কেমন ?</div>
+      <div class="chat-option" onclick="reply('tt')">😢 আমি সাহায্য চাই অনেক টাকা নষ্ট করে ফেলেছি কিন্তু কোন ভাল মাধ্যম পাইনি? !</div>
+      <div id="replyBox" class="chat-reply"></div>
+    </div>
+  </div>
+
+  <div class="info-card">
+    <div class="info-content">
+      <h3>Application Process: Applications are submitted online through the Immigration, .</h3>
+    </div>
+    <img src="https://uploads.onecompiler.io/44bn72ma8/44bnf66fr/1000203190.gif" onclick="window.open('https://wa.me/+16722844386','_blank')" alt="Process">
+    <div class="info-content">
+     <p>• Refugees and Citizenship Canada (IRCC) website. it is recommended to check the official Government of Canada website.</p>
+     <p>• For specific, up-to-date requirements based on your nationality, </p>
+     <p>• Fees: Fees typically include the visa application fee and a biometric fee. Processing Times: Varies,  </p>
+     <p>• But can take 30 to 90 working days for certain applications. Biometrics: Required for most applicants, involving fingerprints and a photo at a Visa Application Centre (VAC). </p>
+      <a href="https://wa.me/+16722844386" class="click-link">📨 Click Now</a>
+    </div>
+  </div>
+  
+  <footer>
+    <img src="https://uploads.onecompiler.io/44bn72ma8/44c9erycb/1000204981.png" width="100%" height="auto" alt="Footer Banner">
+    <marquee>© 2026 🍁 Canada – Australia Reference Immigration Service | Expert visa service | (-Abdur Rahman-) Citizenship | If you have any further questions, please feel free to ask. 🌸</marquee>
+  </footer>
+
   <script>
-    function animateCounter() {
-      const counter = document.getElementById('follower-count');
-      const target = 2189085; 
-      const duration = 2000; 
-      const startTime = performance.now();
-
-      function update(currentTime) {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const currentCount = Math.floor(progress * target);
-        
-        if(currentCount >= 1000000) {
-            counter.innerText = (currentCount / 1000000).toFixed(1) + "M";
-        } else {
-            counter.innerText = currentCount.toLocaleString();
-        }
-
-        if (progress < 1) {
-          requestAnimationFrame(update);
-        } else {
-          counter.innerText = "2.1M";
-        }
-      }
-      requestAnimationFrame(update);
+    function toggleChat(){
+      const popup = document.getElementById("chatPopup");
+      popup.style.display = (popup.style.display === "block") ? "none" : "block";
     }
-    window.onload = animateCounter;
+
+    function reply(type){
+      let msg = "";
+      const replyBox = document.getElementById("replyBox");
+      replyBox.style.display = "block";
+      
+      if(type === "help") {
+        msg = "🤖 Abdur Rahaman? কে এই মানুষটি আপনি চিনেন কি না কিন্তু, শত শত মানুষ ভালোবাসে এই মানুষটি কে আপনি হয়তো অবাক হচ্ছেন, সমস্যা নাই ওনার তথ্য গুলো ঘুরে ঘুরে দেখে আসুন সব বুঝবেন।";
+      }
+      else if(type === "web") {
+        msg = "🤖 Canada work visa প্রসেসিং করতে চাচ্ছেন বিভিন্ন ধরনের ডকুমেন্ট প্রয়োজন যা একজন সাধারণ মানুষের পক্ষে ম্যানেজ করা খুব কঠিন এক্ষেত্রে আপনি আমার দেওয়া তথ্য অনুসারে উনার সাথে কথা বলেন । +1 365 395 3775 +1 672 284 4386";
+      }
+      else if(type === "fb") {
+        msg = "🤖 Canada Australia visa status and solution md Abdur Rahaman Contact us: +1672 284 4386/+1 365 395 3775 ধন্যবাদ।";
+      }
+      else if(type === "id") {
+        msg = "🤖 কোনরকম তথ্যের প্রয়োজন হলে সরাসরি Md Abdur Rahaman, স্যার এর সাহায্যে নিন তিনি কানাডা সিটিজেন্ট ";
+      }
+      else if(type === "yt") {
+        msg = "🤖 বর্তমান ভিসার ইস্যু আগের তুলনায় অনেক বেশি আলহামদুলিল্লাহ 🌺।";
+      }
+      else if(type === "tt") {
+        msg = "🤖 Hey guys 🫠 আমি আপনাকে সাহায্য করতে প্রস্তুত । আমি আপনাকে ইমু এবং হোয়াটসঅ্যাপ নাম্বার দিচ্ছি আপনি আমার বস এর সাথে কথা বলুন এই বিষয়ে WhatsApp) +1 672 284 4386 Imo) +1 365 395 3775 অবশ্যই আপনি সাহায্য পাবেন ধন্যবাদ ভালো থাকবেন।";
+      }
+      replyBox.innerText = msg;
+    }
   </script>
 </body>
 </html>
